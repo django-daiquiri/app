@@ -19,3 +19,6 @@ __pycache__/
 /.env
 /.coverage
 /htmlcov
+
+/static
+/node_modules
