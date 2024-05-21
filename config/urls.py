@@ -1,5 +1,6 @@
 from django.urls import include, path
 from django.contrib import admin
+from django.views.i18n import JavaScriptCatalog
 from django.views.generic import TemplateView
 
 from daiquiri.core.views import home
@@ -28,6 +29,7 @@ urlpatterns = [
     path('layout/', TemplateView.as_view(template_name='wordpress/layout.html'), name='layout'),
 
     path('admin/', admin.site.urls),
+    path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
 ]
 
 handler400 = 'daiquiri.core.views.bad_request'
