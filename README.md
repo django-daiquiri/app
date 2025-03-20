@@ -1,4 +1,4 @@
-Daiquiri Application (React Django version)
+Daiquiri Application
 =====================================
 
-This application is meant to be used with the React Django version of the [Daiquiri Framework](https://github.com/aipescience/django-daiquiri).
+This application is meant to be used with the [Daiquiri Framework](https://github.com/aipescience/django-daiquiri).

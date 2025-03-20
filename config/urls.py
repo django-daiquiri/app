@@ -28,11 +28,6 @@ urlpatterns = [
         ),
         name='robots',
     ),
-    path(
-        'layout/',
-        TemplateView.as_view(template_name='wordpress/layout.html'),
-        name='layout',
-    ),
     path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
     path('admin/', admin.site.urls),
     re_path(r'cms/(?P<file_path>.*)$', FileView.as_view(root='cms'), name='cms'),
