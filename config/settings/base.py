@@ -1,5 +1,3 @@
-import daiquiri.core.env as env
-
 from . import ADDITIONAL_APPS, DJANGO_APPS
 
 SITE_IDENTIFIER = 'example.com'
@@ -39,22 +37,3 @@ INSTALLED_APPS = (
     ]
     + ADDITIONAL_APPS
 )
-
-PASSWORD_HASHERS = [
-    'daiquiri.core.hashers.CrypdSHA512PasswordHasher',
-    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-]
-
-ACCOUNT_USERNAME_MIN_LENGTH = 4
-ACCOUNT_PASSWORD_MIN_LENGTH = 8
-
-ACCOUNT_LOGOUT_ON_GET = True
-
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7
-ACCOUNT_EMAIL_VERIFICATION = env.get('ACCOUNT_EMAIL_VERIFICATION', 'mandatory')
-
-ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
-
-AUTH_SIGNUP = True
-AUTH_TERMS_OF_USE = True
