@@ -1,8 +1,9 @@
-# include settimgs from daiquiri
-from daiquiri.core.settings.django import *
+# include settings from daiquiri
+# fmt: off
 from daiquiri.core.settings.daiquiri import *
+from daiquiri.core.settings.django import *
 from daiquiri.core.settings.logging import *
-from daiquiri.core.settings.vendor import *
+# fmt: on
 
 from daiquiri.auth.settings import *
 from daiquiri.conesearch.settings import *
