@@ -20,5 +20,5 @@ __pycache__/
 /.coverage
 /htmlcov
 
-core
+/core
 poetry.lock
