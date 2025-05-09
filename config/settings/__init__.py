@@ -11,6 +11,10 @@ from daiquiri.contact.settings import *
 from daiquiri.cutout.settings import *
 from daiquiri.datalink.settings import *
 from daiquiri.files.settings import *
+try:
+    from daiquiri.jobs.settings import *
+except ImportError:
+    pass
 from daiquiri.metadata.settings import *
 from daiquiri.oai.settings import *
 from daiquiri.query.settings import *
