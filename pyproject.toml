@@ -1,6 +1,6 @@
 [project]
 name = "daiquiri-app"
-version = "1.0.0"
+version = "1.2.0"
 description = "Daiquiri Application"
 authors = [
     {name = "Anna Admin", email = "admin@example.de"},
@@ -11,7 +11,7 @@ dependencies = []
 
 [project.optional-dependencies]
 daiquiri = [
-  "django-daiquiri[postgres]~=1.1.0",
+  "django-daiquiri[postgres]~=1.2.0",
 ]
 
 [tool.setuptools.packages.find]
