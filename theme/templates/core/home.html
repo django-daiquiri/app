@@ -1,4 +1,4 @@
-{% extends 'core/page.html' %}
+    {% extends 'core/page.html' %}
 {% load static %}
 {% load i18n %}
 {% load core_tags %}
@@ -13,49 +13,21 @@
         <div class="col-md-4">
             <img style="margin-top: 5px;" src="{% static 'core/img/daiquiri.jpg' %}" />
         </div>
-
         <div class="col-md-8"><a href=""></a>
             <p>
-                Today, the publication of research data plays an important role in astronomy
-                and astrophysics. On the one hand, dedicated programs, such as surveys like
-                <a href="http://www.sdss.org/">SDSS</a> and
-                <a href="http://www.rave-survey.aip.de/rave/">RAVE</a>,
-                data intensive instruments like <a href="http://www.lofar.org/">LOFAR</a>,
-                or massive simulations
-                like <a href="http://www.mpa-garching.mpg.de/millennium/">Millennium</a> and
-                <a href="http://cas.sdss-mirror.de/dr7/en/">MultiDark</a>
-                are initially planned to release their data
-                for the community. On the other hand, for more traditionally oriented research
-                projects data publication becomes a key requirement demanded by the funding
-                agencies.
+            The Leibniz Institute for Astrophysics Potsdam (AIP) has developed significant expertise in long-term operation and the curation of astronomical data archives.
             </p>
             <p>
-                The common approach is to publish this data via dedicated web sites. This
-                includes rather simple HTML forms as well as complex query systems such as
-                <a href="http://casjobs.sdss.org/CasJobs/">SDSS-CAS</a> or the
-                <a href="http://www.rave-survey.aip.de/rave/pages/database/">RAVE database query interface</a>.
-                Most of these web sites are
-                tailor made for the particular case and are therefore not easily transferrable
-                to future projects.
+            AIP is one of the partner data centers for the ESA Gaia mission - <a href="https://www.plate-archive.org/">GAIA@AIP</a>.
             </p>
             <p>
-                At AIP, we gained experience with both the maintenance and the
-                development of such applications. The
-                <a href="http://www.rave-survey.aip.de/rave/pages/database/">RAVE</a>
-                and <a href="http://www.multidark.org/MultiDark/">MultiDark</a>
-                databases, the <a href="http://cas.sdss-mirror.de/dr7/en/">German SDSS mirror</a>,
-                and several smaller web sites are written or at least maintained by us. It became, however,
-                apparent that already the current plethora of applications constitutes a major challenge
-                for maintenance expenses and scalability.
+            The range of data archives is huge: from digitized photographic plates (<a href="https://www.plate-archive.org/">APPLAUSE</a> ) to spectroscopic and photometric data (<a href="https://stella.aip.de/">STELLA</a>, <a href="https://www.rave-survey.aip.de/rave/">RAVE</a>, the future <a href="http://www.4most.eu/">4MOST</a> archive, <a href="https://musewide.aip.de/">MUSE-Wide</a>, <a href="https://cars.aip.de/">CARS</a>), solar data (GREGOR, <a href="https://coseecat.aip.de/">CoSee-Cat</a>), X-ray satellite data (<a href="https://xmmssc.aip.de">XMMSSC</a>) to pure simulation data (<a href="https://www.cosmosim.org">CosmoSim</a>). 
             </p>
             <p>
-                In order to address these issues, we are developing a new web framework, which
-                is particularly designed to allow for different highly customizable web applications
-                based on a common easily maintainable code base. It is called <b>Daiquiri</b>. As a service
-                to the community the software is open source. Download <a href="https://github.com/aipescience/django-daiquiri">
-                Daiquiri</a> and this <a href="https://github.com/aipescience/django-daiquiri-app">Daiquiri application</a>
-                as a template / starting point.
-            </p>
+            This diversity is made possible by Daiquiri, a web-based platform developed at the institute. It supports standardized protocols from the International Virtual Observatory Alliance (IVOA) for data access and is available as open-source under the Apache2 license on <a ref="https://github.com/django-daiquiri/>Github Django-Daiquiri</a>.
+        </p>
+        <div class="col-md-8"><a href=""></a>
+
         </div>
         <div class="col-md-12">
             <p>
@@ -64,9 +36,9 @@
                 needed to host your own Daiquiri application for <i>your</i> data.
             </p>
             <p><b>
-                Download <a href="https://github.com/aipescience/django-daiquiri">
-                Daiquiri</a> and <a href="https://github.com/jochenklar/django-daiquiri-app">Daiquiri-app</a> at github!</b>
-            </p>
+                
+                Download <a ref="https://github.com/django-daiquiri/>Django-Daiquiri</a> at Github!
+             </b></p>
         </div>
     </div>
 </div>
