@@ -13,27 +13,25 @@ SITE_CONTACT = {
 }
 SITE_PUBLISHER = 'Leibniz Institute for Astrophysics Potsdam (AIP)'
 SITE_CREATED = '2025-01-01'
-SITE_UPDATED = '2025-03-01'
+SITE_UPDATED = '2026-10-13'
 
-INSTALLED_APPS = (
-    DJANGO_APPS
-    + [
-        'theme',
-        'daiquiri.auth',
-        'daiquiri.conesearch',
-        'daiquiri.contact',
-        'daiquiri.core',
-        'daiquiri.datalink',
-        'daiquiri.files',
-        'daiquiri.jobs',
-        'daiquiri.metadata',
-        'daiquiri.oai',
-        'daiquiri.query',
-        'daiquiri.registry',
-        'daiquiri.serve',
-        'daiquiri.stats',
-        'daiquiri.tap',
-        'daiquiri.uws',
-    ]
-    + ADDITIONAL_APPS
-)
+INSTALLED_APPS = [
+    *DJANGO_APPS,
+    'theme',
+    'daiquiri.auth',
+    'daiquiri.conesearch',
+    'daiquiri.contact',
+    'daiquiri.core',
+    'daiquiri.datalink',
+    'daiquiri.files',
+    'daiquiri.jobs',
+    'daiquiri.metadata',
+    'daiquiri.oai',
+    'daiquiri.query',
+    'daiquiri.registry',
+    'daiquiri.serve',
+    'daiquiri.stats',
+    'daiquiri.tap',
+    'daiquiri.uws',
+    *ADDITIONAL_APPS,
+]

@@ -11,7 +11,7 @@ dependencies = []
 
 [project.optional-dependencies]
 daiquiri = [
-  "django-daiquiri[postgres]~=1.4.0",
+  "django-daiquiri[postgres]~=1.5.0",
 ]
 
 [tool.setuptools.packages.find]
